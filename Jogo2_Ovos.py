@@ -7,10 +7,10 @@ print("""
 comecar = input("Aperte enter para começar: ")
 os.system("cls")
 comecar = "enter"
+print("Tente adivinhar em que andar o ovo quebra. Você terá duas tentativas, boa sorte.")
 tentativas = 0
 condicao = True
 while condicao:
-    print("Tente adivinhar em que andar o ovo quebra. Você terá duas tentativas, boa sorte.")
     usuario = int(input("Digite um andar de 1 a 100 para arremessar seu ovo: "))
     if usuario >= 45 and usuario <= 67:
         print("Ovo sobreviveu.")
