@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 tentativas = 1
 condicao = True
 while condicao:
@@ -14,3 +15,13 @@ while condicao:
     if tentativas == 2:
         condicao = False
     tentativas +=1
+=======
+import os
+os.system("cls")
+print("""
+█▀█ ▄▀█ █▀█ █▄▀ █░█ █▀█ █▀▀ █ █▀█ █▀█   █▀▀ █▀▀ █▀▀ █▀
+█▀▀ █▀█ █▀▄ █░█ █▄█ █▀▄ ██▄ █ █▀▄ █▄█   ██▄ █▄█ █▄█ ▄█""")
+comecar = input("Aperte enter para começar: ")
+os.system("cls")
+comecar = "enter"
+>>>>>>> Stashed changes
