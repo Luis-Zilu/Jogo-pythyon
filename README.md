@@ -1,1 +1,2 @@
 # Jogo-pythyon
+Para vencer o jogo, é necessário descobrir em qual andar o ovo se quebra. A cada tentativa, o jogador deixa o ovo cair de um determinado andar, e o resultado é apresentado imediatamente em seguida, indicando se o ovo quebrou ou permaneceu intacto.
