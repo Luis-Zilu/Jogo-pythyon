@@ -1,18 +1,21 @@
 import os
+import random
+
+andar = random.randint(1,100)
 
 while True:
     os.system("cls")
 
     print("""
-█▀█ ▄▀█ █▀█ █▄▀ █░█ █▀█ █▀▀ █ █▀█ █▀█   █▀▀ █▀▀ █▀▀ █▀     ▄██▄
-█▀▀ █▀█ █▀▄ █░█ █▄█ █▀▄ ██▄ █ █▀▄ █▄█   ██▄ █▄█ █▄█ ▄█    ██████       
-                                                          ▀████▀""")
+█▀█ ▄▀█ █▀█ █▄▀ █░█ █▀█ █▀▀ █ █▀█ █▀█   █▀▀ █▀▀ █▀▀ █▀     ▄██▄    ▄██▄
+█▀▀ █▀█ █▀▄ █░█ █▄█ █▀▄ ██▄ █ █▀▄ █▄█   ██▄ █▄█ █▄█ ▄█    ██████  ██████       
+                                                          ▀████▀  ▀████▀""")
 
     input("Aperte enter para começar: ")
     os.system("cls")
 
     print("Tente adivinhar em que andar o ovo sobrevive.")
-    print("Você terá duas tentativas, boa sorte.\n")
+    print("Você terá dois ovos com 10 tentativas, boa sorte.\n")
 
     tentativas = 0
     condicao = True
@@ -32,25 +35,22 @@ while True:
 
         tentativas += 1
 
-        if 45 <= usuario <= 67:
+        if usuario == andar:
             print("Ovo sobreviveu! Você venceu!")
             break
         else:
-            print("Quebrou o ovo")
+            print("Quebrou o ovo🍳")
 
-            if usuario < 45:
+            if usuario < andar:
                 print("É um número maior.")
-            elif usuario > 67:
+            elif usuario > andar:
                 print("É um número menor.")
 
-        if tentativas == 2:
+        if tentativas == 9 or tentativas == 19:
             print("CHANCE DECISIVA!")
 
-        if tentativas == 3:
-            print("Você perdeu.")
+        if tentativas == 10:
+            print("Quebrou o primeiro ovo.")
+        if tentativas == 20:
+            print("Game over.")
             break
-
-    reiniciar = input("\nAperte ENTER para reiniciar ou digite 'sair' para finalizar: ").lower()
-
-    if reiniciar == "sair":
-        break
